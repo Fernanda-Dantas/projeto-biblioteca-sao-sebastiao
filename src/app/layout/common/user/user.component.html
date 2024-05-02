@@ -1,0 +1,105 @@
+<!-- Button -->
+<button
+    mat-icon-button
+    [matMenuTriggerFor]="userActions">
+    <span class="relative">
+        <img
+            class="w-7 h-7 rounded-full"
+            *ngIf="showAvatar && user.avatar"
+            [src]="user.avatar">
+        <mat-icon
+            *ngIf="!showAvatar || !user.avatar"
+            [svgIcon]="'heroicons_outline:user-circle'"></mat-icon>
+        <span
+            class="absolute right-0 bottom-0 w-2 h-2 rounded-full"
+            [ngClass]="{'mr-px mb-px': !showAvatar || !user.avatar,
+                          'bg-green-500': user?.status === 'online',
+                          'bg-amber-500': user?.status === 'away',
+                          'bg-red-500': user?.status === 'busy',
+                          'bg-gray-400': user?.status === 'not-visible'}"
+        ></span>
+    </span>
+</button>
+
+<mat-menu
+    [xPosition]="'before'"
+    #userActions="matMenu">
+    <button mat-menu-item>
+        <span class="flex flex-col leading-none">
+            <span>Logado como</span>
+            <span class="mt-1.5 text-md font-medium">{{user?.email}}</span>
+        </span>
+    </button>
+    <mat-divider class="my-2"></mat-divider>    
+
+    <button mat-menu-item onClick="window.open('https://www.juriscorrespondente.com.br/jobs'); gaservice.event('button-click', 'navegar', 'label');" >
+        <mat-icon [svgIcon]="'heroicons_outline:briefcase'"></mat-icon>
+        <span>Diligências</span>
+    </button>    
+    <button mat-menu-item onClick="window.open('http://suporte.juriscorrespondente.com.br/'); gaservice.event('button-click', 'navegar', 'Perguntas Frequentes');" >
+        <mat-icon [svgIcon]="'heroicons_outline:information-circle'"></mat-icon>
+        <span>Perguntas Frequentes</span>
+    </button>    
+    <button mat-menu-item onClick="window.open('https://www.juriscorrespondente.com.br/users/edit'); gaservice.event('button-click', 'navegar', 'Perfil');" >
+        <mat-icon [svgIcon]="'heroicons_outline:user-circle'"></mat-icon>
+        <span>Perfil</span>
+    </button>    
+    <button mat-menu-item onClick="window.open('https://www.juriscorrespondente.com.br/passwords/change'); gaservice.event('button-click', 'navegar', 'Dados de acesso');" >
+        <mat-icon [svgIcon]="'heroicons_outline:key'"></mat-icon>
+        <span>Dados de acesso</span>
+    </button>
+    <button mat-menu-item  >
+        <a [routerLink]="['/tax_invoice']">
+            <mat-icon [svgIcon]="'heroicons_outline:document-text'"></mat-icon>
+            <span>Informação para nota fiscal</span>
+        </a>
+    </button>
+    <button mat-menu-item onClick="window.open('https://www.juriscorrespondente.com.br/subscription', '_self'); gaservice.event('button-click', 'my-subscription-button', 'Minha Assinatura');" >
+        <mat-icon [svgIcon]="'heroicons_outline:credit-card'"></mat-icon>
+        <span>Minha Assinatura</span>
+    </button>
+    <button mat-menu-item onClick="window.open('https://www.juriscorrespondente.com.br/favorites'); gaservice.event('button-click', 'navegar', 'Meus favoriros');" >
+        <mat-icon [svgIcon]="'heroicons_outline:heart'"></mat-icon>
+        <span>Meus favoriros</span>
+    </button>
+    <button mat-menu-item (click)="redirectToNotifications()">
+        <mat-icon [svgIcon]="'heroicons_outline:cog'"></mat-icon>
+        <span>Notificações e Comunicação</span>
+    </button>
+    <mat-divider class="my-2"></mat-divider>
+    <button
+        mat-menu-item
+        (click)="signOut()">
+        <mat-icon [svgIcon]="'heroicons_outline:logout'"></mat-icon>
+        <span>Sair</span>
+    </button>
+</mat-menu>
+
+<mat-menu
+    class="user-status-menu"
+    #userStatus="matMenu">
+    <button
+        mat-menu-item
+        (click)="updateUserStatus('online')">
+        <span class="w-4 h-4 mr-3 rounded-full bg-green-500"></span>
+        <span>Online</span>
+    </button>
+    <button
+        mat-menu-item
+        (click)="updateUserStatus('away')">
+        <span class="w-4 h-4 mr-3 rounded-full bg-amber-500"></span>
+        <span>Away</span>
+    </button>
+    <button
+        mat-menu-item
+        (click)="updateUserStatus('busy')">
+        <span class="w-4 h-4 mr-3 rounded-full bg-red-500"></span>
+        <span>Busy</span>
+    </button>
+    <button
+        mat-menu-item
+        (click)="updateUserStatus('not-visible')">
+        <span class="w-4 h-4 mr-3 rounded-full bg-gray-400"></span>
+        <span>Invisible</span>
+    </button>
+</mat-menu>

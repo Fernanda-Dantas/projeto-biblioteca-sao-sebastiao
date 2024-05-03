@@ -7,7 +7,9 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:projeto-biblioteca": "node dist/projeto-biblioteca/server/server.mjs"
+    "serve:ssr:projeto-biblioteca": "node dist/projeto-biblioteca/server/server.mjs",
+    "build:tailwind": "tailwindcss build src/styles.css -o src/styles.css",
+    "watch:tailwind": "tailwindcss build src/styles.css -o src/styles.css --watch"
   },
   "private": true,
   "dependencies": {

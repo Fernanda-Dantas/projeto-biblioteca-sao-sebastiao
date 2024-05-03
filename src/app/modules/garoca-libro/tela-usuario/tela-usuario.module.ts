@@ -2,18 +2,19 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { LandingPageComponent } from './landing-page.component';
-import { landingPageRoutes } from './landing-page.routing';
 import { SharedModule } from '../../../shared/shared.module';
+import { TelaUsuarioComponent } from './tela-usuario.component';
+import { telaUsuarioRoutes } from './tela-usuario.routing';
+
 
 
 @NgModule({
     declarations: [
-        LandingPageComponent,
+        TelaUsuarioComponent,
         
     ],
     imports     : [
-        RouterModule.forChild(landingPageRoutes),
+        RouterModule.forChild(telaUsuarioRoutes),
         MatButtonModule,
         MatIconModule,
         SharedModule
@@ -22,6 +23,6 @@ import { SharedModule } from '../../../shared/shared.module';
        
     ]
 })
-export class LandingPageModule
+export class TelaUsuarioModule
 {
 }

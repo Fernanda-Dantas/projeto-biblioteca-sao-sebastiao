@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #EBDBA7;
+    color: #fff;
+  }
+  
+  .logo img {
+    max-width: 200px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .login input[type="text"],
+  .login input[type="password"] {
+    padding: 5px;
+    margin-right: 5px;
+  }
+  
+  .login button {
+    padding: 5px 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .login button:hover {
+    background-color: #777;
+  }
+  
+  .example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  
+
+  section {
+    display: table;
+  }
+  
+  .inicio {
+    justify-content: center;
+  }
+
+  .example-button-row {
+    display: table-cell;
+    justify-items: center;
+    max-width: 600px;
+  }
+
+  .central-button {
+    background-color: #0080da;
+    padding: 10px 10px;
+    border-radius: 5%;
+    margin-top: 15px;
+    color: #fff;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+
+
+  
+
+  

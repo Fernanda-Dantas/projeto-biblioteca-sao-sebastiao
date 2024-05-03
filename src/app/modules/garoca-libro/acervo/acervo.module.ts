@@ -2,18 +2,19 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { LandingPageComponent } from './landing-page.component';
-import { landingPageRoutes } from './landing-page.routing';
 import { SharedModule } from '../../../shared/shared.module';
+import { AcervoComponent } from './acervo.component';
+import { acervoRoutes } from './acervo.routing';
+
 
 
 @NgModule({
     declarations: [
-        LandingPageComponent,
+       AcervoComponent,
         
     ],
     imports     : [
-        RouterModule.forChild(landingPageRoutes),
+        RouterModule.forChild(acervoRoutes),
         MatButtonModule,
         MatIconModule,
         SharedModule
@@ -22,6 +23,6 @@ import { SharedModule } from '../../../shared/shared.module';
        
     ]
 })
-export class LandingPageModule
+export class AcervoModule
 {
 }

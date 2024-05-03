@@ -28,7 +28,7 @@ body {
   }
   
   nav ul li a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
   }
   
@@ -88,9 +88,4 @@ body {
   .example-card {
     max-width: 400px;
   }
-  
-
-  
-  
-
   

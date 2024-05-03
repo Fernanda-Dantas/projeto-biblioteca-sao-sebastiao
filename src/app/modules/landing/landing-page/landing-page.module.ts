@@ -5,17 +5,21 @@ import { MatIconModule } from '@angular/material/icon';
 import { LandingPageComponent } from './landing-page.component';
 import { landingPageRoutes } from './landing-page.routing';
 import { SharedModule } from '../../../shared/shared.module';
+import { MatCardModule } from '@angular/material/card';
+import { MatTreeModule } from '@angular/material/tree';
 
 
 @NgModule({
     declarations: [
-        LandingPageComponent,
         
     ],
     imports     : [
+        LandingPageComponent,
         RouterModule.forChild(landingPageRoutes),
         MatButtonModule,
         MatIconModule,
+        MatTreeModule,
+        MatCardModule,
         SharedModule
     ],
     providers: [

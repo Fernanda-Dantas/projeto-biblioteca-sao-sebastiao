@@ -1,5 +1,5 @@
 <body>
-    <header class="bg-blue-500">
+    <header class="bg-amber-200">
         <div class="logo">
         <a target="_blank" href="https://fundass.com.br/">
           <img src="../../../../assets/images/logo-fundass.png" alt="Logo">
@@ -7,84 +7,192 @@
         </div>
         <nav>
           <ul>
-            <li><a href="#">A Biblioteca</a></li>
-            <li><a href="#">Notícias</a></li>
-            <li><a href="#">Perguntas Frequentes</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#biblioteca">A Biblioteca</a></li>
+            <li><a href="#noticias">Notícias</a></li>
+            <li><a href="#contato">Contato</a></li>
+            <li><a href="#faq">Perguntas Frequentes</a></li>
             <li><a href="#">GaroçáLibro</a></li>
           </ul>
         </nav>
       </header>
-      
-    <section class="inicio">
-        <div class="example-button-row">
-          <button class="central-button">Central de Atendimento</button>
+
+    <section class="w-screen dark:bg-gray-100 dark:text-gray-800">
+      <div class="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
+        <div class="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+          <h1 class="text-2xl font-bold leading-none sm:text-6xl">Biblioteca e Videoteca
+            <span class="text-amber-400">Municipal</span> Álvaro Dória Orselli – “Seu Alvinho”
+          </h1>
+          <p class="mt-6 mb-8 text-lg sm:mb-12"><strong>Horário de Funcionamento:</strong> de segunda a sexta-feira, das 8h às 18h.
+          </p>
+
         </div>
+        <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+          <img src="../../../../assets/images/biblioteca-ss.jpg" alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+        </div>
+      </div>
     </section>
-   
-    <div class="min-h-screen flex text-center justify-center">
-      <div class="flex-1 bg-indigo-50 border-r-2 border-indigo-300 p-4">
-      <p class="text-lg text-gray-600 mt-2">Bem-vindos ao site oficial da Biblioteca Municipal de São Sebastião!</p>
+
+
+    <section class=" w-screen py-6 bg-amber-200" id="biblioteca">
+      <div class="container mx-auto flex flex-col items-center justify-center p-4 space-y-8 md:p-10 md:px-24 xl:px-48">
+        <h1 class="text-4xl font-bold leading-none text-center">Biblioteca e Videoteca Municipal Álvaro Dória Orselli – “Seu Alvinho”</h1>
+        <p class="pt-2 pb-8 text-xl font-medium text-justify">A nova Biblioteca e Videoteca Municipal Álvaro Dória Orselli – “Seu Alvinho” é um espaço totalmente 
+          climatizado e possui 355 metros quadrados, contando com aproximadamente 28.000 exemplares e mais de 60 estandes para abrigar todo o acervo, 
+          além de espaço para leitura, espaço de web pesquisa, ambiente lúdico para crianças, estacionamento e uma estrutura pensada na acessibilidade, 
+          assegurando o conforto e bem-estar do leitor, atento às normas de segurança. O local possui também acesso gratuito à Internet, com o intuito de auxiliar em trabalhos de pesquisas.</p>
+          <p class="pt-2 pb-8 text-xl font-medium text-justify">A videoteca possui modernos equipamentos de multimídia idealizados a encontros com autores, palestrantes, apresentações de 
+            filmes e documentários. O governo municipal em parceria com Governo do Estado de São Paulo realiza no espaço o programa Pontos MIS, com agendamentos de 
+            Cine Clubes Municipais.</p>
       </div>
-      <div class="flex-1 bg-indigo-50 p-4">
-        <img class="object-cover w-full h-full" src="../../../../assets/images/biblioteca-ss.jpg" alt="Imagem">
-      </div>
-    </div>
-    
-    <p class="text-4xl text-gray-600 mt-2">Notícias</p>
-    <div class="grid grid-cols-3 gap-4">   
-
-
-    <mat-card class="example-card">
-
-      <img mat-card-image src="../../../../assets/images/biblioteca.jpeg" alt="Photo of a Shiba Inu">
-      <mat-card-content>
-        <p>
-          Biblioteca Municipal de São Sebastião disponibiliza WhatsApp para dúvidas e informações sobre os serviços oferecidos
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>ACESSE</button>
-      </mat-card-actions>
-    </mat-card>
+    </section>
 
     
-    <mat-card class="example-card">
+    <p class="text-4xl text-gray-600 mt-4 mb-4 text-center" id="noticias">Notícias</p>
+    <div class="grid grid-cols-3 gap-4 mb-6 justify-center" style="justify-items: center;">   
 
-      <img mat-card-image src="../../../../assets/images/oficina.jpeg" alt="Photo of a Shiba Inu">
-      <mat-card-content>
-        <p>
-          Prefeitura de São Sebastião e Pontos MIS realizam oficina gratuita sobre fotografia
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>ACESSE</button>
-      </mat-card-actions>
-    </mat-card>
+        <div class="max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800">
+          <img src="h../../../../../../assets/images/biblioteca.jpeg" alt="" class="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500">
+          <div class="flex flex-col justify-between p-6 space-y-8">
+            <div class="space-y-2">
+              <h2 class="text-lg font-semibold tracking-wide">Biblioteca Municipal de São Sebastião disponibiliza WhatsApp para dúvidas e informações sobre os serviços oferecidos</h2>
+              <p class="dark:text-gray-800">A Biblioteca Municipal de São Sebastião “Álvaro Dória Orselli – Seu Alvinho” disponibiliza um novo […]</p>
+            </div>
+            <a target="_blank" href="https://fundass.com.br/biblioteca-municipal-de-sao-sebastiao-disponibiliza-whatsapp-para-duvidas-e-informacoes-sobre-os-servicos-oferecidos/"> 
+              <button type="button" class="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-amber-200">Leia Mais</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800">
+          <img src="../../../../assets/images/oficina (1).jpeg" alt="" class="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500">
+          <div class="flex flex-col justify-between p-6 space-y-8">
+            <div class="space-y-2">
+              <h2 class="text-lg font-semibold tracking-wide">Prefeitura de São Sebastião e Pontos MIS realizam oficina ‘Telenovela: um bate-papo’</h2>
+              <p class="dark:text-gray-800">A Prefeitura de São Sebastião, por meio da Fundação Educacional e Cultural ‘Deodato Sant’Anna’ (Fundass), […]</p>
+            </div>
+            <a target="_blank" href="https://fundass.com.br/prefeitura-de-sao-sebastiao-e-pontos-mis-realizam-oficina-telenovela-um-bate-papo/">
+              <button type="button" class="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-amber-200">Leia Mais</button>
+            </a>
+          </div>
+        </div>
 
     
-    <mat-card class="example-card">
-
-      <img mat-card-image src="../../../../assets/images/oficina (1).jpeg" alt="Photo of a Shiba Inu">
-      <mat-card-content>
-        <p>
-          Prefeitura de São Sebastião e Pontos MIS realizam oficina ‘Telenovela: um bate-papo’
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>ACESSE</button>
-      </mat-card-actions>
-    </mat-card>
+        <div class="max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800">
+          <img src="../../../../assets/images/oficina.jpeg" alt="" class="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500">
+          <div class="flex flex-col justify-between p-6 space-y-8">
+            <div class="space-y-2">
+              <h2 class="text-lg font-semibold tracking-wide">Prefeitura de São Sebastião e Pontos MIS realizam oficina gratuita sobre fotografia</h2>
+              <p class="dark:text-gray-800">No dia 25 de abril, a Prefeitura de São Sebastião, por meio da Fundação Educacional […]</p>
+            </div>
+            <a target="_blank" href="https://fundass.com.br/prefeitura-de-sao-sebastiao-e-pontos-mis-realizam-oficina-gratuita-sobre-fotografia/">
+              <button type="button" class="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-amber-200">Leia Mais</button>
+            </a>
+          </div>
+        </div>
+  
   </div>
 
   <div>
-    <h2>Contato</h2>
+
+    <section class="py-6 w-screen dark:bg-gray-100 dark:text-gray-900" id="contato">
+      <div class="grid max-w-6xl mt-8 grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
+        <div class="py-6 md:py-0 md:px-6">
+          <h1 class="text-4xl font-bold">Contato</h1>
+          <p class="text-lg pt-2 pb-4">Vamos conversar!</p>
+          <div class="space-y-4">
+            <p class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6">
+                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+              </svg>
+              <span>Rua Manoel Rufino, nº 15, Centro Histórico</span>
+            </p>
+            <p class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2 sm:mr-6">
+                <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+              </svg>
+              <span>(12) 3892-5641</span>
+            </p>
+          </div>
+        </div>
+        <form novalidate="" class="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
+          <label class="block">
+            <span class="mb-1">Nome Completo</span>
+            <input type="text" placeholder="Maria Capitolina de Pádua Santiago" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100">
+          </label>
+          <label class="block">
+            <span class="mb-1">Email</span>
+            <input type="email" placeholder="capitu@domcasmurro.com.br" class="block w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100">
+          </label>
+          <label class="block">
+            <span class="mb-1">Mensagem</span>
+            <textarea rows="3" class="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 dark:bg-gray-100"></textarea>
+          </label>
+          <button type="button" class="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 bg-amber-200">Enviar</button>
+        </form>
+      </div>
+    </section>
   </div>
 
   <div>
-    <h2>FAQ</h2>
+    <section class="w-screen bg-gray-100 text-gray-800" id="faq">
+      <div class="container flex flex-col justify-center p-4 mx-auto md:p-8">
+        <p class="text-lg p-2 text-sm font-medium tracking-wider text-center uppercase">Como funcionamos</p>
+        <h2 class="mb-12 text-3xl font-bold leading-none text-center sm:text-5xl">Perguntas Frequentes</h2>
+        <div class="flex flex-col divide-y sm:px-8 lg:px-12 xl:px-32 dark:divide-gray-300">
+          <details>
+            <summary class="py-2 outline-none cursor-pointer focus:underline">Qual o horário de funcionamento?</summary>
+            <div class="px-4 pb-4">
+              <p>Os visitantes e moradores podem usufruir da nova biblioteca, de segunda a sexta-feira, sempre das 8h às 18h. A Biblioteca e Videoteca Municipal fica na Rua Manoel Rufino, 15, Centro.</p>
+            </div>
+          </details>
+          <details>
+            <summary class="py-2 outline-none cursor-pointer focus:underline">Como posso entrar em contato pelo Whatsapp?</summary>
+            <div class="px-4 pb-4">
+              <p>A Biblioteca Municipal de São Sebastião “Álvaro Dória Orselli – Seu Alvinho” disponibiliza um novo meio de comunicação para os munícipes leitores tirarem dúvidas e obterem informações sobre os serviços oferecidos pela Biblioteca.
+                Agora é possível fazer renovações de empréstimo, sugestões e receber as divulgações das atividades realizadas no espaço, por meio do número de WhatsApp (12) 3892-5641.
+                O canal está disponível de segunda a sexta-feira, das 8h às 18h, exclusivamente para mensagens. O atendimento também pode ser feito por meio do telefone fixo (12) 3892-5641 e pelo e-mail bibliotecaarrobafundass.com.br.
+                A Biblioteca Municipal está localizada na Rua Manoel Rufino, 15, no Centro Histórico.</p>
+            </div>
+          </details>
+          <details>
+            <summary class="py-2 outline-none cursor-pointer focus:underline">colocar mais uuma pergunta</summary>
+            <div class="px-4 pb-4 space-y-2">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptates aspernatur dolores in consequatur doloremque inventore reprehenderit, consequuntur perspiciatis architecto.</p>
+              <p>Sed consectetur quod tenetur! Voluptatibus culpa incidunt veritatis velit quasi cupiditate unde eaque! Iure, voluptatibus autem eaque unde possimus quae.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+    
+    
   </div>
   
 
-<footer>FOOTER</footer>
+
+  <footer class="px-4 py-8 bg-amber-200">
+    <div class="container flex flex-wrap items-center justify-center mx-auto space-y-4 sm:justify-between sm:space-y-0">
+      <div class="flex flex-row pr-3 space-x-4 sm:space-x-8">
+        <div class="flex items-center justify-center w-64 h-64">
+            <img src="../../../../assets/images/footer_1.png" alt="">
+        </div>
+      </div>
+      <ul class="flex flex-wrap pl-3 space-x-4 sm:space-x-8">
+        <li>
+          <a rel="noopener noreferrer" href="https://www.instagram.com/cultura.fundass/">Instagram</a>
+        </li>
+        <li>
+          <a rel="noopener noreferrer" href="https://www.facebook.com/cultura.fundass">Facebook</a>
+        </li>
+        <li>
+          <a rel="noopener noreferrer" href="https://www.youtube.com/channel/UCq4nB2jkhnFNac25LzEnvag">Youtube</a>
+        </li>
+      </ul>
+    </div>
+    <div class="text-sm text-center">© 2024 Desenvolvido pelos alunos da UNIVESP.</div>
+  </footer>
+
 </body>
+
+
+

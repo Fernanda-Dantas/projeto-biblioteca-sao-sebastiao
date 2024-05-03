@@ -5,19 +5,22 @@ import { MatIconModule } from '@angular/material/icon';
 import { SharedModule } from '../../../shared/shared.module';
 import { PaginaInicialComponent } from './pagina-inicial.component';
 import { paginaInicialRoutes } from './pagina-inicial.component.routing';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 
 
 @NgModule({
     declarations: [
-        PaginaInicialComponent,
+
         
     ],
     imports     : [
+        PaginaInicialComponent,
         RouterModule.forChild(paginaInicialRoutes),
         MatButtonModule,
         MatIconModule,
-        SharedModule
+        SharedModule,
+        MatSlideToggleModule
     ],
     providers: [
        

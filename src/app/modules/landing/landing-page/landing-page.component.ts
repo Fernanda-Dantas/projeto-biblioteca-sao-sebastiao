@@ -5,15 +5,16 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatTreeFlatDataSource, MatTreeFlattener, MatTreeModule} from '@angular/material/tree';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
+import { SharedModule } from "../../../shared/shared.module";
 
 
 @Component({
-    selector     : 'landing-page-biblioteca',
+    selector: 'landing-page-biblioteca',
     standalone: true,
-    imports: [MatCardModule, MatButtonModule, MatTreeModule, MatIconModule],
-    templateUrl  : './landing-page.component.html',
+    templateUrl: './landing-page.component.html',
     styleUrls: ['./landing-page.component.css'],
     encapsulation: ViewEncapsulation.None,
+    imports: [MatCardModule, MatButtonModule, MatTreeModule, MatIconModule, SharedModule]
 })
 export class LandingPageComponent
 {

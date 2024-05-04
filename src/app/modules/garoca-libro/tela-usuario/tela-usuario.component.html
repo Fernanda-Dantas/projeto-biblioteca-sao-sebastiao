@@ -1,1 +1,199 @@
-<h2>TELA USUÁRIO</h2>
+<header class="p-4 dark:bg-gray-100 dark:text-gray-800">
+	<div class="container flex justify-between h-16 mx-auto">
+		<ul class="items-stretch hidden space-x-3 lg:flex">
+			<li class="flex">
+				<a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 dark:border- dark:text-amber-500 dark:border-amber-400">Início</a>
+			</li>
+			<li class="flex">
+				<a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 dark:border- dark:text-amber-500 dark:border-amber-400">Acervo</a>
+			</li>
+			<li class="flex">
+				<a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 dark:border- dark:text-amber-500 dark:border-amber-400">Biblioteca</a>
+			</li>
+		</ul>
+		<a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex items-center p-2">
+            <img src="../../../../assets/images/logo-fundass.png" alt="">
+		</a>
+		<div class="flex items-center md:space-x-4">
+			<div class="relative">
+				<span class="absolute inset-y-0 left-0 flex items-center pl-2">
+					<button type="submit" title="Search" class="p-1 focus:outline-none focus:ring">
+						<svg fill="currentColor" viewBox="0 0 512 512" class="w-4 h-4 dark:text-gray-800">
+							<path d="M479.6,399.716l-81.084-81.084-62.368-25.767A175.014,175.014,0,0,0,368,192c0-97.047-78.953-176-176-176S16,94.953,16,192,94.953,368,192,368a175.034,175.034,0,0,0,101.619-32.377l25.7,62.2L400.4,478.911a56,56,0,1,0,79.2-79.195ZM48,192c0-79.4,64.6-144,144-144s144,64.6,144,144S271.4,336,192,336,48,271.4,48,192ZM456.971,456.284a24.028,24.028,0,0,1-33.942,0l-76.572-76.572-23.894-57.835L380.4,345.771l76.573,76.572A24.028,24.028,0,0,1,456.971,456.284Z"></path>
+						</svg>
+					</button>
+				</span>
+				<input type="search" name="Pesquisar" placeholder="Pesquisar..." class="w-32 py-2 pl-10 text-sm rounded-md sm:w-auto focus:outline-none dark:bg-gray-100 dark:text-gray-800 focus:dark:bg-gray-50">
+			</div>
+			<button type="button" class="hidden px-6 py-2 rounded lg:block bg-amber-200">Sair</button>
+		</div>
+		<button title="Open menu" type="button" class="p-4 lg:hidden">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 dark:text-gray-800">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+			</svg>
+		</button>
+	</div>
+</header>
+
+<section class="w-screen">
+    <div class="flex flex-col">
+        <p class="text-3xl p-8 text-amber-400">Dados do Usuário</p>
+        <div class="flex items-center dark:bg-gray-100 dark:text-gray-800">
+            <a rel="noopener noreferrer" href="#" class="px-5 py-1 border-b-2 dark:text-amber-500 dark:border-amber-400">Minha Conta</a>
+            <a rel="noopener noreferrer" href="#" class="px-5 py-1 border-b-2 dark:border-gray-300">Novidades</a>
+            <a rel="noopener noreferrer" href="#" class="px-5 py-1 border-b-2 dark:border-gray-300">Renovar</a>
+            <a rel="noopener noreferrer" href="#" class="px-5 py-1 border-b-2 dark:border-gray-300">Sair</a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <div class="max-w-md p-8 sm:flex sm:space-x-6 dark:bg-amber-50 dark:text-gray-800 m-8">
+            <div class="flex-shrink-0 w-full mb-6 h-44 sm:h-32 sm:w-32 sm:mb-0">
+                <img src="../../../../assets/images/profile_photo.jpg" alt="" class="object-cover object-center w-full h-full rounded dark:bg-gray-500">
+            </div>
+            <div class="flex flex-col space-y-4">
+                <div>
+                    <p class="text-sm dark:text-gray-600">Nome:</p>
+                    <p class="text-sm dark:text-gray-600">Unidade: Biblioteca Municipal de São Sebastião</p>
+                    <p class="text-sm dark:text-gray-600">Telefone:</p>
+                    <p class="text-sm dark:text-gray-600">E-mail:</p>
+                    <p class="text-sm dark:text-gray-600">Endereço:</p>
+                    <p class="text-sm dark:text-gray-600">Situação: NORMAL</p>
+                    <p class="text-sm dark:text-gray-600">Validade: 31/12/2024</p>
+                </div>
+                <div class="space-y-1">
+                    <button type="button" class="px-3 py-3 rounded-full dark:bg-amber-300 dark:text-black">Renovar Matrícula</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <p class="text-3xl p-8 text-amber-400">Situação do Usuário</p>
+    <div class="container p-2 mx-auto sm:p-4 dark:text-gray-800">
+        <h2 class="mb-4 text-2xl font-semibold leading-tight">2 Empréstimos em Aberto</h2>
+        <div class="overflow-x-auto">
+            <table class="min-w-full text-xs">
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col class="w-24">
+                </colgroup>
+                <thead>
+                    <tr class="text-left">
+                        <th class="p-3">Qt. Renovação</th>
+                        <th class="p-3">Descri. da Obra</th>
+                        <th class="p-3">Dt. Empréstimo</th>
+                        <th class="p-3">Dt. Devolução</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b border-opacity-20 dark:border-gray-300 dark:bg-gray-50">
+                        <td class="p-3">
+                            <p>1</p>
+                        </td>
+                        <td class="p-3">
+                            <p>Harry Potter e a Pedra Filosofal: 1</p>
+                        </td>
+                        <td class="p-3">
+                            <p>14 Jan 2022</p>
+                        </td>
+                        <td class="p-3">
+                            <p>01 Feb 2022</p>
+                        </td>
+                        <td class="p-3 text-right">
+                            <span class="px-3 py-1 font-semibold rounded-md dark:bg-amber-300 dark:text-black">
+                                <span>Renovar</span>
+                            </span>
+                        </td>
+                    </tr>
+                    <tr class="border-b border-opacity-20 dark:border-gray-300 dark:bg-gray-50">
+                        <td class="p-3">
+                            <p>1</p>
+                        </td>
+                        <td class="p-3">
+                            <p>Harry Potter e a Câmara Secreta: 2</p>
+                        </td>
+                        <td class="p-3">
+                            <p>14 Jan 2022</p>
+                        </td>
+                        <td class="p-3">
+                            <p>01 Feb 2022</p>
+                        </td>
+                        <td class="p-3 text-right">
+                            <span class="px-3 py-1 font-semibold rounded-md dark:bg-amber-300 dark:text-black">
+                                <span>Renovar</span>
+                            </span>
+                        </td>
+                    </tr>
+  
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div>
+        <mat-list>
+            <mat-list-item> <span class="text-lg font-bold text-amber-500">0</span> Obra(s) Reservada(s)</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item><span class="text-lg font-bold text-amber-500">0</span> Obra(s) em Espera para ser retiradas na Biblioteca</mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item><span class="text-lg font-bold text-amber-500">0</span> Multas Pendentes</mat-list-item>
+          </mat-list>
+          
+    </div>
+</section>
+
+
+<section>
+    <div class="example-button-row">
+      <button mat-flat-button color="accent">Histórico de Empréstimos</button>
+      <button mat-flat-button color="accent">Sugestão de Títulos</button>
+      <button mat-flat-button color="accent">Alterar senha</button>
+      <button mat-flat-button color="accent">Alterar Cadastro</button>
+    </div>
+  </section>
+
+  <section>
+  <p>
+    <mat-toolbar>
+        <p class="text-3xl p-8 text-amber-400">Meus Livros Favoritados</p>
+    </mat-toolbar>
+  </p>
+  <div class="flex flex-row">
+
+    <div class="max-w-xs p-6 rounded-md shadow-md dark:bg-gray-50 dark:text-gray-900">
+        <img src="../../../../assets/images/livro_1.jpg" alt="" class="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500">
+        <div class="mt-6 mb-2">
+            <p class="text-base font-semibold tracking-wide">Nem te conto - Emily Henry</p>
+        </div>
+        <button mat-flat-button color="accent">Tirar dos Favoritos</button>
+    </div>
+
+    <div class="max-w-xs p-6 rounded-md shadow-md dark:bg-gray-50 dark:text-gray-900">
+        <img src="../../../../assets/images/livro_3.jpg" alt="" class="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500">
+        <div class="mt-6 mb-2">
+            <p class="text-base font-semibold tracking-wide">O Bolo de Natal - Elza Fiúza</p>
+        </div>
+        <button mat-flat-button color="accent">Tirar dos Favoritos</button>
+    </div>
+
+    <div class="max-w-xs p-6 rounded-md shadow-md dark:bg-gray-50 dark:text-gray-900">
+        <img src="../../../../assets/images/livro_22.jpg" alt="" class="object-cover object-center w-full rounded-md h-72 dark:bg-gray-500">
+        <div class="mt-6 mb-2">
+            <p class="text-base font-semibold tracking-wide">Kafka à Beira-mar - Haruki Murakami</p>
+        </div>
+        <button mat-flat-button color="accent">Tirar dos Favoritos</button>
+    </div>
+       
+  </div>
+</section>

@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emprestimo</title>
+    <title>Empréstimo</title>
     {% bootstrap_css %}
 </head>
 <body>
     <div class="container">
-        <h1>Emprestimo</h1>
+        <h1>Empréstimo de Livros</h1>
+        <p>Cadastre aqui os livros que o usuário vai emprestar.</p>
         {% bootstrap_messages %}
         <form method="post" class="form" autocomplete="off" enctype="multipart/form-data">
             {% csrf_token %}

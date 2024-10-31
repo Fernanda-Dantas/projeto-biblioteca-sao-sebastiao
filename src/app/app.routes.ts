@@ -7,7 +7,7 @@ import { TelaUsuarioComponent } from './modules/garoca-libro/tela-usuario/tela-u
 
 
 export const routes: Routes = [
-    { path: '', redirectTo: '/', pathMatch: 'full' }, // Rota padrão redirecionada para '/home'
+    { path: '', redirectTo: '/home', pathMatch: 'full' }, // Rota padrão redirecionada para '/home'
     { path: 'home', component: LandingPageComponent },
     { path: 'acervo', component: AcervoComponent },
     { path: 'garoca-libro', component: PaginaInicialComponent },
